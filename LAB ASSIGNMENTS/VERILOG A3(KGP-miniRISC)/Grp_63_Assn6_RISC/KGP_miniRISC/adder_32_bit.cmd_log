@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/adder_32_bit.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/adder_32_bit.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/adder_32_bit.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/adder_32_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "adder_32_bit.ngc" adder_32_bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o adder_32_bit_map.ncd adder_32_bit.ngd adder_32_bit.pcf 

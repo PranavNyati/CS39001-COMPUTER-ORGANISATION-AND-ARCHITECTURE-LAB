@@ -1,0 +1,40 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Nov 09 13:52:43 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rst" LOCATE = SITE "J15" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "out<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "out<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "out<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "out<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "out<8>" LOCATE = SITE "V16" LEVEL 1;
+COMP "out<9>" LOCATE = SITE "T15" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "out<14>" LOCATE = SITE "V12" LEVEL 1;
+COMP "out<13>" LOCATE = SITE "V14" LEVEL 1;
+COMP "out<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "out<11>" LOCATE = SITE "T16" LEVEL 1;
+COMP "out<10>" LOCATE = SITE "U14" LEVEL 1;
+COMP "out<15>" LOCATE = SITE "V11" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clk_div1/out_clk" BEL "clk_div1/counter_0" BEL
+        "clk_div1/counter_1" BEL "clk_div1/counter_2" BEL "clk_div1/counter_3"
+        BEL "clk_div1/counter_4" BEL "clk_div1/counter_5" BEL
+        "clk_div1/counter_6" BEL "clk_div1/counter_7" BEL "clk_div1/counter_8"
+        BEL "clk_div1/counter_9" BEL "clk_div1/counter_10" BEL
+        "clk_div1/counter_11" BEL "clk_div1/counter_12" BEL
+        "clk_div1/counter_13" BEL "clk_div1/counter_14" BEL
+        "clk_div1/counter_15" BEL "clk_div1/counter_16" BEL
+        "clk_div1/counter_17" BEL "clk_div1/counter_18" BEL
+        "clk_div1/counter_19" BEL "clk_div1/counter_20" BEL
+        "clk_div1/counter_21" BEL "clk_div1/counter_22" BEL
+        "clk_div1/counter_23" BEL "clk_div1/counter_24" BEL
+        "clk_div1/counter_25" BEL "clk_div1/counter_26" BEL
+        "clk_div1/counter_27" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

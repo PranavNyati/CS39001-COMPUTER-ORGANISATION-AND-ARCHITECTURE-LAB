@@ -1,0 +1,982 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: KGP_miniRISC_wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "KGP_miniRISC_wrapper.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "KGP_miniRISC_wrapper"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : KGP_miniRISC_wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\lookahead_carry_unit.v" into library work
+Parsing module <lookahead_carry_unit>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\cla_4_bit.v" into library work
+Parsing module <cla_4_bit>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\cla_16_bit_LCU.v" into library work
+Parsing module <cla_16bit_LCU>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\shift_module.v" into library work
+Parsing module <shift_module>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_32b_3_1.v" into library work
+Parsing module <mux_32b_3_1>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_32b_2_1.v" into library work
+Parsing module <mux_32b_2_1>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\diff_lookup.v" into library work
+Parsing module <diff_lookup>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v" into library work
+Parsing module <adder_32_bit>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\register_file.v" into library work
+Parsing module <register_file>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\program_counter.v" into library work
+Parsing module <program_counter>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\pc_increment.v" into library work
+Parsing module <pc_increment>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_5b_3_1.v" into library work
+Parsing module <mux_5b_3_1>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\jump_control.v" into library work
+Parsing module <jump_control>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ipcore_dir\bram_instr_memory.v" into library work
+Parsing module <bram_instr_memory>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ipcore_dir\bram_data_memory.v" into library work
+Parsing module <bram_data_memory>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\instruction_decoder.v" into library work
+Parsing module <instruction_decoder>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\immediate_sign_extend.v" into library work
+Parsing module <immediate_sign_extend>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\dff.v" into library work
+Parsing module <dff>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\branch_control.v" into library work
+Parsing module <branch_control>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\datapath.v" into library work
+Parsing module <datapath>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\control_unit.v" into library work
+Parsing module <control_unit>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\KGPminiRISC.v" into library work
+Parsing module <KGPminiRISC>.
+Analyzing Verilog file "D:\Grp_63_Assn6_RISC\KGP_miniRISC\KGP_miniRISC_wrapper.v" into library work
+Parsing module <KGP_miniRISC_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <KGP_miniRISC_wrapper>.
+
+Elaborating module <KGPminiRISC>.
+
+Elaborating module <clock_divider>.
+WARNING:HDLCompiler:413 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\clock_divider.v" Line 33: Result of 29-bit expression is truncated to fit in 28-bit target.
+
+Elaborating module <control_unit>.
+
+Elaborating module <datapath>.
+
+Elaborating module <dff>.
+
+Elaborating module <program_counter>.
+
+Elaborating module <bram_instr_memory>.
+WARNING:HDLCompiler:1499 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ipcore_dir\bram_instr_memory.v" Line 39: Empty module <bram_instr_memory> remains a black box.
+
+Elaborating module <instruction_decoder>.
+
+Elaborating module <mux_5b_3_1>.
+
+Elaborating module <register_file>.
+
+Elaborating module <immediate_sign_extend>.
+
+Elaborating module <mux_32b_2_1>.
+
+Elaborating module <ALU>.
+
+Elaborating module <adder_32_bit>.
+
+Elaborating module <cla_16bit_LCU>.
+
+Elaborating module <cla_4_bit>.
+
+Elaborating module <lookahead_carry_unit>.
+
+Elaborating module <shift_module>.
+
+Elaborating module <diff_lookup>.
+
+Elaborating module <branch_control>.
+
+Elaborating module <pc_increment>.
+
+Elaborating module <jump_control>.
+
+Elaborating module <mux_32b_3_1>.
+
+Elaborating module <bram_data_memory>.
+WARNING:HDLCompiler:1499 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ipcore_dir\bram_data_memory.v" Line 39: Empty module <bram_data_memory> remains a black box.
+WARNING:HDLCompiler:634 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\KGPminiRISC.v" Line 91: Net <button> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <KGP_miniRISC_wrapper>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\KGP_miniRISC_wrapper.v".
+    Summary:
+	no macro.
+Unit <KGP_miniRISC_wrapper> synthesized.
+
+Synthesizing Unit <KGPminiRISC>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\KGPminiRISC.v".
+WARNING:Xst:653 - Signal <button> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <KGPminiRISC> synthesized.
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\clock_divider.v".
+    Found 28-bit register for signal <counter>.
+    Found 1-bit register for signal <out_clk>.
+    Found 28-bit adder for signal <counter[27]_GND_3_o_add_0_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <clock_divider> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\control_unit.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred  24 Multiplexer(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <datapath>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\datapath.v".
+        ra = 5'b11111
+    Found 32-bit register for signal <final_result>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <datapath> synthesized.
+
+Synthesizing Unit <dff>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\dff.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+Synthesizing Unit <program_counter>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\program_counter.v".
+    Found 32-bit register for signal <instr_addr>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <instruction_decoder>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\instruction_decoder.v".
+    Summary:
+	no macro.
+Unit <instruction_decoder> synthesized.
+
+Synthesizing Unit <mux_5b_3_1>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_5b_3_1.v".
+    Found 5-bit 3-to-1 multiplexer for signal <out> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_5b_3_1> synthesized.
+
+Synthesizing Unit <register_file>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\register_file.v".
+    Found 1024-bit register for signal <n0043[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <readData1> created at line 85.
+    Found 32-bit 32-to-1 multiplexer for signal <readData2> created at line 86.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <register_file> synthesized.
+
+Synthesizing Unit <immediate_sign_extend>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\immediate_sign_extend.v".
+    Summary:
+	no macro.
+Unit <immediate_sign_extend> synthesized.
+
+Synthesizing Unit <mux_32b_2_1>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_32b_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32b_2_1> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ALU.v".
+INFO:Xst:3210 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\ALU.v" line 60: Output port <cout> of the instance <adder_2> is unconnected or connected to loadless signal.
+WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator equal for signal <input1[31]_input2[31]_equal_30_o> created at line 90
+    Summary:
+	inferred   1 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <adder_32_bit>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v".
+INFO:Xst:3210 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v" line 30: Output port <P_16bit> of the instance <cla_16bit_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v" line 30: Output port <G_16bit> of the instance <cla_16bit_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v" line 32: Output port <P_16bit> of the instance <cla_16bit_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Grp_63_Assn6_RISC\KGP_miniRISC\adder_32_bit.v" line 32: Output port <G_16bit> of the instance <cla_16bit_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <adder_32_bit> synthesized.
+
+Synthesizing Unit <cla_16bit_LCU>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\cla_16_bit_LCU.v".
+    Summary:
+	no macro.
+Unit <cla_16bit_LCU> synthesized.
+
+Synthesizing Unit <cla_4_bit>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\cla_4_bit.v".
+    Summary:
+Unit <cla_4_bit> synthesized.
+
+Synthesizing Unit <lookahead_carry_unit>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\lookahead_carry_unit.v".
+    Summary:
+	no macro.
+Unit <lookahead_carry_unit> synthesized.
+
+Synthesizing Unit <shift_module>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\shift_module.v".
+    Found 32-bit shifter logical left for signal <in[31]_shift_amt[10]_shift_left_1_OUT> created at line 35
+    Found 32-bit shifter logical right for signal <in[31]_shift_amt[10]_shift_right_3_OUT> created at line 39
+    Found 32-bit shifter logical left for signal <in[31]_shift_amt[31]_shift_left_5_OUT> created at line 42
+    Found 32-bit shifter logical right for signal <in[31]_shift_amt[31]_shift_right_7_OUT> created at line 45
+    Found 32-bit shifter arithmetic right for signal <in[31]_shift_amt[10]_shift_right_9_OUT> created at line 49
+    Found 32-bit shifter arithmetic right for signal <in[31]_shift_amt[31]_shift_right_11_OUT> created at line 52
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1803_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1809_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1815_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1821_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1827_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1833_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1839_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1845_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1851_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1857_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1863_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1869_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1875_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1881_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1887_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1893_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1899_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1905_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1911_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1917_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1923_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1929_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1935_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1941_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1947_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1953_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1959_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1965_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1971_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1977_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1983_o> created at line 37.
+    Found 1-bit 6-to-1 multiplexer for signal <shifted_val[31]_in[31]_MUX_1989_o> created at line 37.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shifted_val<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  32 Latch(s).
+	inferred  35 Multiplexer(s).
+	inferred   6 Combinational logic shifter(s).
+Unit <shift_module> synthesized.
+
+Synthesizing Unit <diff_lookup>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\diff_lookup.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   5 Latch(s).
+	inferred 124 Multiplexer(s).
+Unit <diff_lookup> synthesized.
+
+Synthesizing Unit <branch_control>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\branch_control.v".
+    Summary:
+	inferred  11 Multiplexer(s).
+Unit <branch_control> synthesized.
+
+Synthesizing Unit <pc_increment>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\pc_increment.v".
+    Found 32-bit adder for signal <nextPC> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <pc_increment> synthesized.
+
+Synthesizing Unit <jump_control>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\jump_control.v".
+    Found 32-bit adder for signal <mux_in> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <jump_control> synthesized.
+
+Synthesizing Unit <mux_32b_3_1>.
+    Related source file is "D:\Grp_63_Assn6_RISC\KGP_miniRISC\mux_32b_3_1.v".
+    Found 32-bit 3-to-1 multiplexer for signal <out> created at line 31.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32b_3_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 28-bit adder                                          : 1
+ 32-bit adder                                          : 2
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 1024-bit register                                     : 1
+ 28-bit register                                       : 1
+ 32-bit register                                       : 2
+# Latches                                              : 38
+ 1-bit latch                                           : 38
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 243
+ 1-bit 2-to-1 multiplexer                              : 135
+ 1-bit 6-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 22
+ 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 3-to-1 multiplexer                             : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 6
+ 32-bit shifter arithmetic right                       : 2
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 2
+# Xors                                                 : 33
+ 32-bit xor2                                           : 1
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/bram_data_memory.ngc>.
+Reading core <ipcore_dir/bram_instr_memory.ngc>.
+Loading core <bram_data_memory> for timing and area information for instance <data_memory>.
+Loading core <bram_instr_memory> for timing and area information for instance <instruction_memory>.
+WARNING:Xst:1710 - FF/Latch <final_result_0> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_1> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_2> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_3> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_4> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_5> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_6> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_7> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_8> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_9> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_10> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_11> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_12> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_13> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_14> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <final_result_15> (without init value) has a constant value of 0 in block <dataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <final_result_16> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_17> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_18> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_19> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_20> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_21> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_22> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_23> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_24> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_25> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_26> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_27> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_28> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_29> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_30> of sequential type is unconnected in block <dataPath>.
+WARNING:Xst:2677 - Node <final_result_31> of sequential type is unconnected in block <dataPath>.
+
+Synthesizing (advanced) Unit <clock_divider>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock_divider> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 1090
+ Flip-Flops                                            : 1090
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 243
+ 1-bit 2-to-1 multiplexer                              : 135
+ 1-bit 6-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 22
+ 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 3-to-1 multiplexer                             : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 6
+ 32-bit shifter arithmetic right                       : 2
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 2
+# Xors                                                 : 33
+ 32-bit xor2                                           : 1
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <final_result_31> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_30> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_29> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_28> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_27> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_26> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_25> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_24> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_23> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_22> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_21> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_20> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_19> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_18> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_17> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_16> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_15> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_14> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_13> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_12> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_11> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_10> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_9> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_8> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_7> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_6> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_5> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_4> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_3> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_2> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_1> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <final_result_0> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    res_diff_0 in unit <diff_lookup>
+    res_diff_1 in unit <diff_lookup>
+    res_diff_2 in unit <diff_lookup>
+    res_diff_3 in unit <diff_lookup>
+    res_diff_4 in unit <diff_lookup>
+
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <KGP_miniRISC_wrapper> ...
+
+Optimizing unit <control_unit> ...
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <shift_module> ...
+
+Optimizing unit <diff_lookup> ...
+
+Optimizing unit <register_file> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block KGP_miniRISC_wrapper, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1086
+ Flip-Flops                                            : 1086
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : KGP_miniRISC_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3328
+#      GND                         : 3
+#      INV                         : 4
+#      LUT1                        : 57
+#      LUT2                        : 46
+#      LUT3                        : 1084
+#      LUT4                        : 117
+#      LUT5                        : 375
+#      LUT6                        : 1352
+#      MUXCY                       : 104
+#      MUXF7                       : 91
+#      VCC                         : 3
+#      XORCY                       : 92
+# FlipFlops/Latches                : 1124
+#      FDC                         : 28
+#      FDCE                        : 1024
+#      FDE                         : 1
+#      FDP                         : 32
+#      FDR                         : 1
+#      LD                          : 38
+# RAMS                             : 2
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 1
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1124  out of  126800     0%  
+ Number of Slice LUTs:                 3035  out of  63400     4%  
+    Number used as Logic:              3035  out of  63400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3037
+   Number with an unused Flip Flop:    1913  out of   3037    62%  
+   Number with an unused LUT:             2  out of   3037     0%  
+   Number of fully used LUT-FF pairs:  1122  out of   3037    36%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    135     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+Clock Signal                                                                                                                                               | Clock buffer(FF name)                                     | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+clk                                                                                                                                                        | BUFGP                                                     | 29    |
+my_miniRISC/clk_div1/out_clk                                                                                                                               | BUFG                                                      | 1059  |
+my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1378_o(my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1378_o1:O)              | NONE(*)(my_miniRISC/dataPath/alu/carry)                   | 1     |
+my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1383_o(my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1383_o1:O)              | BUFG(*)(my_miniRISC/dataPath/alu/shift_1/shifted_val_0)   | 32    |
+my_miniRISC/dataPath/alu/diff_lookup_1/diff_temp[31]_diff_temp[31]_OR_412_o(my_miniRISC/dataPath/alu/diff_lookup_1/diff_temp[31]_diff_temp[31]_OR_412_o8:O)| NONE(*)(my_miniRISC/dataPath/alu/diff_lookup_1/res_diff_0)| 5     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                               | Buffer(FF name)                                                                                                                                                              | Load  |
+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+my_miniRISC/dataPath/data_memory/N1(my_miniRISC/dataPath/data_memory/XST_GND:G)              | NONE(my_miniRISC/dataPath/data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)       | 2     |
+my_miniRISC/dataPath/instruction_memory/N1(my_miniRISC/dataPath/instruction_memory/XST_GND:G)| NONE(my_miniRISC/dataPath/instruction_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 9.684ns (Maximum Frequency: 103.263MHz)
+   Minimum input arrival time before clock: 1.376ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.795ns (frequency: 357.718MHz)
+  Total number of paths / destination ports: 407 / 29
+-------------------------------------------------------------------------
+Delay:               2.795ns (Levels of Logic = 29)
+  Source:            my_miniRISC/clk_div1/counter_0 (FF)
+  Destination:       my_miniRISC/clk_div1/counter_27 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: my_miniRISC/clk_div1/counter_0 to my_miniRISC/clk_div1/counter_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.478   0.399  my_miniRISC/clk_div1/counter_0 (my_miniRISC/clk_div1/counter_0)
+     INV:I->O              1   0.146   0.000  my_miniRISC/clk_div1/Mcount_counter_lut<0>_INV_0 (my_miniRISC/clk_div1/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<0> (my_miniRISC/clk_div1/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<1> (my_miniRISC/clk_div1/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<2> (my_miniRISC/clk_div1/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<3> (my_miniRISC/clk_div1/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<4> (my_miniRISC/clk_div1/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<5> (my_miniRISC/clk_div1/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<6> (my_miniRISC/clk_div1/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<7> (my_miniRISC/clk_div1/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<8> (my_miniRISC/clk_div1/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<9> (my_miniRISC/clk_div1/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<10> (my_miniRISC/clk_div1/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<11> (my_miniRISC/clk_div1/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<12> (my_miniRISC/clk_div1/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<13> (my_miniRISC/clk_div1/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<14> (my_miniRISC/clk_div1/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<15> (my_miniRISC/clk_div1/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<16> (my_miniRISC/clk_div1/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<17> (my_miniRISC/clk_div1/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<18> (my_miniRISC/clk_div1/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<19> (my_miniRISC/clk_div1/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<20> (my_miniRISC/clk_div1/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<21> (my_miniRISC/clk_div1/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<22> (my_miniRISC/clk_div1/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<23> (my_miniRISC/clk_div1/Mcount_counter_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<24> (my_miniRISC/clk_div1/Mcount_counter_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<25> (my_miniRISC/clk_div1/Mcount_counter_cy<25>)
+     MUXCY:CI->O           0   0.029   0.000  my_miniRISC/clk_div1/Mcount_counter_cy<26> (my_miniRISC/clk_div1/Mcount_counter_cy<26>)
+     XORCY:CI->O           1   0.510   0.000  my_miniRISC/clk_div1/Mcount_counter_xor<27> (Result<27>)
+     FDC:D                     0.030          my_miniRISC/clk_div1/counter_27
+    ----------------------------------------
+    Total                      2.795ns (2.396ns logic, 0.399ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_miniRISC/clk_div1/out_clk'
+  Clock period: 9.684ns (frequency: 103.263MHz)
+  Total number of paths / destination ports: 9986496 / 1088
+-------------------------------------------------------------------------
+Delay:               9.684ns (Levels of Logic = 13)
+  Source:            my_miniRISC/dataPath/reg_file/registers_0_843 (FF)
+  Destination:       my_miniRISC/dataPath/PC/instr_addr_31 (FF)
+  Source Clock:      my_miniRISC/clk_div1/out_clk rising
+  Destination Clock: my_miniRISC/clk_div1/out_clk rising
+
+  Data Path: my_miniRISC/dataPath/reg_file/registers_0_843 to my_miniRISC/dataPath/PC/instr_addr_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.478   0.790  my_miniRISC/dataPath/reg_file/registers_0_843 (my_miniRISC/dataPath/reg_file/registers_0_843)
+     LUT6:I2->O            1   0.124   0.776  my_miniRISC/dataPath/reg_file/Mmux_readData1_87 (my_miniRISC/dataPath/reg_file/Mmux_readData1_87)
+     LUT6:I2->O            1   0.124   0.000  my_miniRISC/dataPath/reg_file/Mmux_readData1_32 (my_miniRISC/dataPath/reg_file/Mmux_readData1_32)
+     MUXF7:I1->O          27   0.368   0.572  my_miniRISC/dataPath/reg_file/Mmux_readData1_2_f7_1 (my_miniRISC/dataPath/read_data1<11>)
+     LUT5:I4->O            4   0.124   0.556  my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/cla_3/Mxor_p_3_xo<0>1 (my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/cla_3/p<3>)
+     LUT6:I4->O            1   0.124   0.776  my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/lcu_1/c_array<3><2>3_SW0_SW1_SW2 (N443)
+     LUT6:I2->O            2   0.124   0.722  my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/lcu_1/c_array<3><2>3_SW0_SW1 (N196)
+     LUT6:I3->O           20   0.124   0.546  my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/lcu_1/c_array<3><2>3 (my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/carry<3>)
+     LUT6:I5->O            1   0.124   0.421  my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/lcu_1/G_16bit_block<3>1111 (my_miniRISC/dataPath/alu/adder_1/cla_16bit_1/lcu_1/G_16bit_block<3>111)
+     LUT6:I5->O            2   0.124   0.925  my_miniRISC/dataPath/alu/Mmux_result145 (my_miniRISC/dataPath/result<15>)
+     LUT6:I1->O            1   0.124   0.000  my_miniRISC/dataPath/alu/zero_flag4_SW0_F (N467)
+     MUXF7:I0->O           1   0.365   0.421  my_miniRISC/dataPath/alu/zero_flag4_SW0 (N455)
+     LUT6:I5->O           32   0.124   0.574  my_miniRISC/dataPath/JC/branch_ctrl4 (my_miniRISC/dataPath/JC/branch_ctrl)
+     LUT6:I5->O            1   0.124   0.000  my_miniRISC/dataPath/JC/Mmux_next_addr44 (my_miniRISC/dataPath/next_instr_addr<31>)
+     FDP:D                     0.030          my_miniRISC/dataPath/PC/instr_addr_31
+    ----------------------------------------
+    Total                      9.684ns (2.605ns logic, 7.079ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              1.366ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       my_miniRISC/clk_div1/out_clk (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to my_miniRISC/clk_div1/out_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1118   0.001   0.681  rst_IBUF (rst_IBUF)
+     INV:I->O              1   0.146   0.399  my_miniRISC/clk_div1/rst_inv1_INV_0 (my_miniRISC/clk_div1/rst_inv)
+     FDE:CE                    0.139          my_miniRISC/clk_div1/out_clk
+    ----------------------------------------
+    Total                      1.366ns (0.286ns logic, 1.080ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'my_miniRISC/clk_div1/out_clk'
+  Total number of paths / destination ports: 1089 / 1089
+-------------------------------------------------------------------------
+Offset:              1.376ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       my_miniRISC/dataPath/PC/instr_addr_31 (FF)
+  Destination Clock: my_miniRISC/clk_div1/out_clk rising
+
+  Data Path: rst to my_miniRISC/dataPath/PC/instr_addr_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1118   0.001   1.221  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            1   0.124   0.000  my_miniRISC/dataPath/JC/Mmux_next_addr44 (my_miniRISC/dataPath/next_instr_addr<31>)
+     FDP:D                     0.030          my_miniRISC/dataPath/PC/instr_addr_31
+    ----------------------------------------
+    Total                      1.376ns (0.155ns logic, 1.221ns route)
+                                       (11.3% logic, 88.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.795|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_miniRISC/clk_div1/out_clk
+---------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------+---------+---------+---------+---------+
+my_miniRISC/clk_div1/out_clk                                               |    9.684|         |    3.942|         |
+my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1378_o       |         |    1.054|         |         |
+my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1383_o       |         |    7.010|         |         |
+my_miniRISC/dataPath/alu/diff_lookup_1/diff_temp[31]_diff_temp[31]_OR_412_o|         |    5.196|         |         |
+---------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1378_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+my_miniRISC/clk_div1/out_clk|         |         |    8.949|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_miniRISC/dataPath/alu/control_ALUop[4]_control_ALUop[4]_OR_1383_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+my_miniRISC/clk_div1/out_clk|         |         |   11.324|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock my_miniRISC/dataPath/alu/diff_lookup_1/diff_temp[31]_diff_temp[31]_OR_412_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+my_miniRISC/clk_div1/out_clk|         |         |   20.792|         |
+----------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 46.20 secs
+ 
+--> 
+
+Total memory usage is 4673808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

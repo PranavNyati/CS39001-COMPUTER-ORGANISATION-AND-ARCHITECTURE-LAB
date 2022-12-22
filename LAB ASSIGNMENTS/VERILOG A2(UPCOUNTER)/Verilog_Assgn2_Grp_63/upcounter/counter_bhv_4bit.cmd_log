@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "D:/ISE Project/upcounter/counter_bhv_4bit.xst" -ofn "D:/ISE Project/upcounter/counter_bhv_4bit.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/upcounter/counter_bhv_4bit.xst" -ofn "D:/ISE Project/upcounter/counter_bhv_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "counter_bhv_4bit.ngc" counter_bhv_4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_bhv_4bit_map.ncd counter_bhv_4bit.ngd counter_bhv_4bit.pcf 
+par -w -intstyle ise -ol high -mt off counter_bhv_4bit_map.ncd counter_bhv_4bit.ncd counter_bhv_4bit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_bhv_4bit.twx counter_bhv_4bit.ncd -o counter_bhv_4bit.twr counter_bhv_4bit.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_bhv_4bit.ut counter_bhv_4bit.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/upcounter/counter_bhv_4bit.xst" -ofn "D:/ISE Project/upcounter/counter_bhv_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "counter_bhv_4bit.ngc" counter_bhv_4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_bhv_4bit_map.ncd counter_bhv_4bit.ngd counter_bhv_4bit.pcf 
+par -w -intstyle ise -ol high -mt off counter_bhv_4bit_map.ncd counter_bhv_4bit.ncd counter_bhv_4bit.pcf 
+bitgen -intstyle ise -f counter_bhv_4bit.ut counter_bhv_4bit.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/upcounter/counter_bhv_4bit.xst" -ofn "D:/ISE Project/upcounter/counter_bhv_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "counter_bhv_4bit.ngc" counter_bhv_4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_bhv_4bit_map.ncd counter_bhv_4bit.ngd counter_bhv_4bit.pcf 
+par -w -intstyle ise -ol high -mt off counter_bhv_4bit_map.ncd counter_bhv_4bit.ncd counter_bhv_4bit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_bhv_4bit.twx counter_bhv_4bit.ncd -o counter_bhv_4bit.twr counter_bhv_4bit.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_bhv_4bit.ut counter_bhv_4bit.ncd 

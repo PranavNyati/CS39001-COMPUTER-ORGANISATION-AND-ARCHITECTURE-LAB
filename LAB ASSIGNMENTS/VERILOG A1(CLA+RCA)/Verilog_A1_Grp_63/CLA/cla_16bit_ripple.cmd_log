@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_16bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "cla_16bit_ripple.ngc" cla_16bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cla_16bit_ripple_map.ncd cla_16bit_ripple.ngd cla_16bit_ripple.pcf 
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/cla_16bit_ripple.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/cla_16bit_ripple.syr" 
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/cla_16bit_ripple.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/cla_16bit_ripple.syr" 

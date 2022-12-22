@@ -1,0 +1,17 @@
+# Output products list for <bram_instr_memory>
+_xmsgs/pn_parser.xmsgs
+bram_instr_memory/blk_mem_gen_v7_3_readme.txt
+bram_instr_memory/doc/blk_mem_gen_v7_3_vinfo.html
+bram_instr_memory/doc/pg058-blk-mem-gen.pdf
+bram_instr_memory.asy
+bram_instr_memory.gise
+bram_instr_memory.mif
+bram_instr_memory.ngc
+bram_instr_memory.sym
+bram_instr_memory.v
+bram_instr_memory.veo
+bram_instr_memory.xco
+bram_instr_memory.xise
+bram_instr_memory_flist.txt
+bram_instr_memory_xmdf.tcl
+summary.log

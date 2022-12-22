@@ -1,0 +1,74 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_isim_beh.exe -prj D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_beh.prj work.KGP_miniRISC_wrapper_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/lookahead_carry_unit.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/cla_4_bit.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/cla_16_bit_LCU.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/shift_module.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/mux_32b_3_1.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/mux_32b_2_1.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/diff_lookup.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/adder_32_bit.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/register_file.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/program_counter.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/pc_increment.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/mux_5b_3_1.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/jump_control.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/ipcore_dir/bram_instr_memory.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/ipcore_dir/bram_data_memory.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/instruction_decoder.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/immediate_sign_extend.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/dff.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/branch_control.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/ALU.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/datapath.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/control_unit.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/clock_divider.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper.v" into library work
+Analyzing Verilog file "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module clock_divider
+Compiling module control_unit
+Compiling module dff
+Compiling module program_counter
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module bram_instr_memory
+Compiling module instruction_decoder
+Compiling module mux_5b_3_1
+Compiling module register_file
+Compiling module immediate_sign_extend
+Compiling module mux_32b_2_1
+Compiling module cla_4_bit
+Compiling module lookahead_carry_unit
+Compiling module cla_16bit_LCU
+Compiling module adder_32_bit
+Compiling module shift_module
+Compiling module diff_lookup
+Compiling module ALU
+Compiling module branch_control
+Compiling module pc_increment
+Compiling module mux_32b_3_1
+Compiling module jump_control
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module bram_data_memory
+Compiling module datapath
+Compiling module KGPminiRISC
+Compiling module KGP_miniRISC_wrapper
+Compiling module KGP_miniRISC_wrapper_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 34 Verilog Units
+Built simulation executable D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_isim_beh.exe
+Fuse Memory Usage: 34616 KB
+Fuse CPU Usage: 624 ms

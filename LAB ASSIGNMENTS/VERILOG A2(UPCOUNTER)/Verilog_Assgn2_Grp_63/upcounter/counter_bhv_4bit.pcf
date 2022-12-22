@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Sep 14 17:13:10 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "counter<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "counter<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "counter<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "counter<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "rstn" LOCATE = SITE "J15" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clk_div/out_clk" BEL "clk_div/counter_0" BEL
+        "clk_div/counter_1" BEL "clk_div/counter_2" BEL "clk_div/counter_3"
+        BEL "clk_div/counter_4" BEL "clk_div/counter_5" BEL
+        "clk_div/counter_6" BEL "clk_div/counter_7" BEL "clk_div/counter_8"
+        BEL "clk_div/counter_9" BEL "clk_div/counter_10" BEL
+        "clk_div/counter_11" BEL "clk_div/counter_12" BEL "clk_div/counter_13"
+        BEL "clk_div/counter_14" BEL "clk_div/counter_15" BEL
+        "clk_div/counter_16" BEL "clk_div/counter_17" BEL "clk_div/counter_18"
+        BEL "clk_div/counter_19" BEL "clk_div/counter_20" BEL
+        "clk_div/counter_21" BEL "clk_div/counter_22" BEL "clk_div/counter_23"
+        BEL "clk_div/counter_24" BEL "clk_div/counter_25" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

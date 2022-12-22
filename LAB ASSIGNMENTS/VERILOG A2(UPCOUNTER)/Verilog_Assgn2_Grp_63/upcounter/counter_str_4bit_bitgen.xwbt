@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ISE Project\upcounter\counter_str_4bit.ncd
+OUTFILE=D:\ISE Project\upcounter\counter_str_4bit.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=D:\ISE Project\upcounter
+LICENSE=WebPack
+USER_INFO=__0_0_0

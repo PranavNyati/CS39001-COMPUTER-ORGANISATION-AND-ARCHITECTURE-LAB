@@ -1,0 +1,108 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "KGPminiRISC.ngc" KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+par -w -intstyle ise -ol high -mt off KGPminiRISC_map.ncd KGPminiRISC.ncd KGPminiRISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGPminiRISC.twx KGPminiRISC.ncd -o KGPminiRISC.twr KGPminiRISC.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f KGPminiRISC.ut KGPminiRISC.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGPminiRISC.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGPminiRISC.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGPminiRISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 KGPminiRISC.ngc KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 KGPminiRISC.ngc KGPminiRISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGPminiRISC_map.ncd KGPminiRISC.ngd KGPminiRISC.pcf 

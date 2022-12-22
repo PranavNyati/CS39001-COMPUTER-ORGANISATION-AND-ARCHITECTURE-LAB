@@ -1,0 +1,28 @@
+Command line:
+   KGP_miniRISC_wrapper_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  56556
+
+Wed Nov 09 14:13:11 2022
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5162.51 Meg
+
+ Total Signals          : 666
+ Total Nets             : 2601
+ Total Signal Drivers   : 349
+ Total Blocks           : 83
+ Total Primitive Blocks : 65
+ Total Processes        : 395
+ Total Traceable Variables  : 696
+ Total Scalar Nets and Variables : 114387
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 5162.51 Meg
+
+Wed Nov 09 14:13:20 2022
+

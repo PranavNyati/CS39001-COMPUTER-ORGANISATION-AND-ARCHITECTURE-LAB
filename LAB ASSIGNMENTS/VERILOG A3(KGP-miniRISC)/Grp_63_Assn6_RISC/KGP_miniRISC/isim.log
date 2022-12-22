@@ -1,0 +1,39 @@
+ISim log file
+Running: D:\ISE Project\KGPminiRISC\KGP_miniRISC\KGP_miniRISC\KGP_miniRISC_wrapper_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 40000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module KGP_miniRISC_wrapper_tb.uut.my_miniRISC.dataPath.instruction_memory.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module KGP_miniRISC_wrapper_tb.uut.my_miniRISC.dataPath.data_memory.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+        -17
+        -39
+          0
+        -17
+          0
+        -17
+          0
+          0
+          0
+         11
+          0
+         22
+          0
+         49
+          0
+         68
+          0
+         68
+          0
+        150
+          0
+Stopped at time : 32005 ns : File "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb.v" Line 140

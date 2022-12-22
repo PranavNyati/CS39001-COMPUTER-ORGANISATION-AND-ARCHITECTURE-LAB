@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/immediate_sign_extend.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/immediate_sign_extend.syr" 

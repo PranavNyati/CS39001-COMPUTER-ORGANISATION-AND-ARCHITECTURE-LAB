@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/wrapper_cla_16bit_ripple.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/wrapper_cla_16bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm wrapper_cla_16bit_ripple.bmm -p xc7a100t-csg324-1 wrapper_cla_16bit_ripple.ngc wrapper_cla_16bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o wrapper_cla_16bit_ripple_map.ncd wrapper_cla_16bit_ripple.ngd wrapper_cla_16bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off wrapper_cla_16bit_ripple_map.ncd wrapper_cla_16bit_ripple.ncd wrapper_cla_16bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml wrapper_cla_16bit_ripple.twx wrapper_cla_16bit_ripple.ncd -o wrapper_cla_16bit_ripple.twr wrapper_cla_16bit_ripple.pcf 
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/wrapper_cla_16bit_ripple.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/CLA/CLA/wrapper_cla_16bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm wrapper_cla_16bit_ripple.bmm -p xc7a100t-csg324-1 wrapper_cla_16bit_ripple.ngc wrapper_cla_16bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o wrapper_cla_16bit_ripple_map.ncd wrapper_cla_16bit_ripple.ngd wrapper_cla_16bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off wrapper_cla_16bit_ripple_map.ncd wrapper_cla_16bit_ripple.ncd wrapper_cla_16bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml wrapper_cla_16bit_ripple.twx wrapper_cla_16bit_ripple.ncd -o wrapper_cla_16bit_ripple.twr wrapper_cla_16bit_ripple.pcf 

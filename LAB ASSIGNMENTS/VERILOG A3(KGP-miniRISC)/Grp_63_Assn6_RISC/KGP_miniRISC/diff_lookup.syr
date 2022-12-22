@@ -1,0 +1,573 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Reading design: diff_lookup.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "diff_lookup.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "diff_lookup"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : diff_lookup
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/diff_lookup.v" into library work
+Parsing module <diff_lookup>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <diff_lookup>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <diff_lookup>.
+    Related source file is "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/diff_lookup.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res_diff<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   5 Latch(s).
+	inferred 124 Multiplexer(s).
+Unit <diff_lookup> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 5
+ 1-bit latch                                           : 5
+# Multiplexers                                         : 124
+ 1-bit 2-to-1 multiplexer                              : 124
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 124
+ 1-bit 2-to-1 multiplexer                              : 124
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    res_diff_0 in unit <diff_lookup>
+    res_diff_1 in unit <diff_lookup>
+    res_diff_2 in unit <diff_lookup>
+    res_diff_3 in unit <diff_lookup>
+    res_diff_4 in unit <diff_lookup>
+
+
+Optimizing unit <diff_lookup> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block diff_lookup, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : diff_lookup.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 110
+#      GND                         : 1
+#      LUT2                        : 9
+#      LUT3                        : 14
+#      LUT4                        : 23
+#      LUT5                        : 19
+#      LUT6                        : 44
+# FlipFlops/Latches                : 5
+#      LD                          : 5
+# IO Buffers                       : 64
+#      IBUF                        : 32
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  109  out of  63400     0%  
+    Number used as Logic:               109  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    109
+   Number with an unused Flip Flop:     109  out of    109   100%  
+   Number with an unused LUT:             0  out of    109     0%  
+   Number of fully used LUT-FF pairs:     0  out of    109     0%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          64
+ Number of bonded IOBs:                  64  out of    210    30%  
+    IOB Flip Flops/Latches:               5
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+res_diff_4_G(res_diff_4_G:O)       | NONE(*)(res_diff_4)    | 1     |
+res_diff_3_G(res_diff_3_G:O)       | NONE(*)(res_diff_3)    | 1     |
+res_diff_2_G(res_diff_2_G:O)       | NONE(*)(res_diff_2)    | 1     |
+res_diff_1_G(res_diff_1_G:O)       | NONE(*)(res_diff_1)    | 1     |
+res_diff_0_G(res_diff_0_G:O)       | NONE(*)(res_diff_0)    | 1     |
+-----------------------------------+------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 10.086ns
+   Maximum output required time after clock: 1.024ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'res_diff_4_G'
+  Total number of paths / destination ports: 2624 / 1
+-------------------------------------------------------------------------
+Offset:              9.078ns (Levels of Logic = 12)
+  Source:            diff_temp<23> (PAD)
+  Destination:       res_diff_4 (LATCH)
+  Destination Clock: res_diff_4_G falling
+
+  Data Path: diff_temp<23> to res_diff_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.816  diff_temp_23_IBUF (diff_temp_23_IBUF)
+     LUT4:I0->O            6   0.124   0.809  diff_temp[31]_GND_1_o_equal_25_o<31>21 (diff_temp[31]_GND_1_o_equal_25_o<31>2)
+     LUT6:I2->O            5   0.124   0.563  diff_temp[31]_diff_temp[31]_OR_62_o41 (diff_temp[31]_diff_temp[31]_OR_62_o4)
+     LUT6:I4->O            5   0.124   0.803  diff_temp[31]_GND_1_o_equal_10_o<31>12 (diff_temp[31]_GND_1_o_equal_10_o<31>1)
+     LUT5:I1->O            7   0.124   0.816  diff_temp[31]_GND_1_o_equal_13_o<31>1111 (diff_temp[31]_GND_1_o_equal_13_o<31>111)
+     LUT5:I1->O            5   0.124   0.448  diff_temp[31]_GND_1_o_equal_13_o<31>11 (diff_temp[31]_GND_1_o_equal_13_o<31>1)
+     LUT6:I5->O            5   0.124   0.803  diff_temp[31]_GND_1_o_equal_3_o<31>1 (diff_temp[31]_GND_1_o_equal_3_o)
+     LUT5:I1->O            2   0.124   0.945  Mmux_PWR_1_o_GND_1_o_MUX_900_o111 (Mmux_PWR_1_o_GND_1_o_MUX_900_o11)
+     LUT6:I0->O            3   0.124   0.550  Mmux_PWR_1_o_GND_1_o_MUX_900_o12 (Mmux_PWR_1_o_GND_1_o_MUX_900_o12)
+     LUT6:I4->O            2   0.124   0.427  Mmux_PWR_1_o_GND_1_o_MUX_900_o14 (PWR_1_o_GND_1_o_MUX_900_o)
+     LUT2:I1->O            2   0.124   0.722  diff_temp[31]_PWR_1_o_AND_56_o1 (diff_temp[31]_PWR_1_o_AND_56_o)
+     LUT3:I0->O            1   0.124   0.000  res_diff_4_D (res_diff_4_D)
+     LD:D                      0.011          res_diff_4
+    ----------------------------------------
+    Total                      9.078ns (1.376ns logic, 7.702ns route)
+                                       (15.2% logic, 84.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'res_diff_3_G'
+  Total number of paths / destination ports: 3136 / 1
+-------------------------------------------------------------------------
+Offset:              9.030ns (Levels of Logic = 11)
+  Source:            diff_temp<23> (PAD)
+  Destination:       res_diff_3 (LATCH)
+  Destination Clock: res_diff_3_G falling
+
+  Data Path: diff_temp<23> to res_diff_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.816  diff_temp_23_IBUF (diff_temp_23_IBUF)
+     LUT4:I0->O            6   0.124   0.809  diff_temp[31]_GND_1_o_equal_25_o<31>21 (diff_temp[31]_GND_1_o_equal_25_o<31>2)
+     LUT6:I2->O            5   0.124   0.563  diff_temp[31]_diff_temp[31]_OR_62_o41 (diff_temp[31]_diff_temp[31]_OR_62_o4)
+     LUT6:I4->O            5   0.124   0.803  diff_temp[31]_GND_1_o_equal_10_o<31>12 (diff_temp[31]_GND_1_o_equal_10_o<31>1)
+     LUT5:I1->O            7   0.124   0.816  diff_temp[31]_GND_1_o_equal_13_o<31>1111 (diff_temp[31]_GND_1_o_equal_13_o<31>111)
+     LUT5:I1->O            5   0.124   0.563  diff_temp[31]_GND_1_o_equal_13_o<31>11 (diff_temp[31]_GND_1_o_equal_13_o<31>1)
+     LUT6:I4->O            5   0.124   0.966  diff_temp[31]_GND_1_o_equal_15_o<31>1 (diff_temp[31]_GND_1_o_equal_15_o)
+     LUT6:I0->O            2   0.124   0.945  diff_temp[31]_diff_temp[31]_OR_62_o2 (diff_temp[31]_diff_temp[31]_OR_62_o2)
+     LUT6:I0->O           10   0.124   0.775  diff_temp[31]_diff_temp[31]_OR_62_o8 (diff_temp[31]_diff_temp[31]_OR_62_o)
+     LUT3:I0->O            2   0.124   0.722  diff_temp[31]_PWR_1_o_AND_58_o1 (diff_temp[31]_PWR_1_o_AND_58_o)
+     LUT3:I0->O            1   0.124   0.000  res_diff_3_D (res_diff_3_D)
+     LD:D                      0.011          res_diff_3
+    ----------------------------------------
+    Total                      9.030ns (1.252ns logic, 7.778ns route)
+                                       (13.9% logic, 86.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'res_diff_2_G'
+  Total number of paths / destination ports: 3200 / 1
+-------------------------------------------------------------------------
+Offset:              9.650ns (Levels of Logic = 13)
+  Source:            diff_temp<23> (PAD)
+  Destination:       res_diff_2 (LATCH)
+  Destination Clock: res_diff_2_G falling
+
+  Data Path: diff_temp<23> to res_diff_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.816  diff_temp_23_IBUF (diff_temp_23_IBUF)
+     LUT4:I0->O            6   0.124   0.809  diff_temp[31]_GND_1_o_equal_25_o<31>21 (diff_temp[31]_GND_1_o_equal_25_o<31>2)
+     LUT6:I2->O            5   0.124   0.563  diff_temp[31]_diff_temp[31]_OR_62_o41 (diff_temp[31]_diff_temp[31]_OR_62_o4)
+     LUT6:I4->O            5   0.124   0.803  diff_temp[31]_GND_1_o_equal_10_o<31>12 (diff_temp[31]_GND_1_o_equal_10_o<31>1)
+     LUT5:I1->O            7   0.124   0.816  diff_temp[31]_GND_1_o_equal_13_o<31>1111 (diff_temp[31]_GND_1_o_equal_13_o<31>111)
+     LUT5:I1->O            5   0.124   0.448  diff_temp[31]_GND_1_o_equal_13_o<31>11 (diff_temp[31]_GND_1_o_equal_13_o<31>1)
+     LUT6:I5->O            4   0.124   0.959  diff_temp[31]_GND_1_o_equal_17_o<31>1 (diff_temp[31]_GND_1_o_equal_17_o)
+     LUT6:I0->O            2   0.124   0.945  Mmux_PWR_1_o_GND_1_o_MUX_931_o111 (Mmux_PWR_1_o_GND_1_o_MUX_931_o111)
+     LUT6:I0->O            1   0.124   0.421  Mmux_PWR_1_o_GND_1_o_MUX_962_o11 (Mmux_PWR_1_o_GND_1_o_MUX_962_o1)
+     LUT6:I5->O            1   0.124   0.421  Mmux_PWR_1_o_GND_1_o_MUX_962_o12 (Mmux_PWR_1_o_GND_1_o_MUX_962_o11)
+     LUT6:I5->O            2   0.124   0.427  Mmux_PWR_1_o_GND_1_o_MUX_962_o13 (PWR_1_o_GND_1_o_MUX_962_o)
+     LUT2:I1->O            2   0.124   0.722  diff_temp[31]_PWR_1_o_AND_60_o1 (diff_temp[31]_PWR_1_o_AND_60_o)
+     LUT3:I0->O            1   0.124   0.000  res_diff_2_D (res_diff_2_D)
+     LD:D                      0.011          res_diff_2
+    ----------------------------------------
+    Total                      9.650ns (1.500ns logic, 8.150ns route)
+                                       (15.5% logic, 84.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'res_diff_1_G'
+  Total number of paths / destination ports: 3584 / 1
+-------------------------------------------------------------------------
+Offset:              9.461ns (Levels of Logic = 13)
+  Source:            diff_temp<23> (PAD)
+  Destination:       res_diff_1 (LATCH)
+  Destination Clock: res_diff_1_G falling
+
+  Data Path: diff_temp<23> to res_diff_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.816  diff_temp_23_IBUF (diff_temp_23_IBUF)
+     LUT4:I0->O            6   0.124   0.809  diff_temp[31]_GND_1_o_equal_25_o<31>21 (diff_temp[31]_GND_1_o_equal_25_o<31>2)
+     LUT6:I2->O            5   0.124   0.563  diff_temp[31]_diff_temp[31]_OR_62_o41 (diff_temp[31]_diff_temp[31]_OR_62_o4)
+     LUT6:I4->O            5   0.124   0.803  diff_temp[31]_GND_1_o_equal_10_o<31>12 (diff_temp[31]_GND_1_o_equal_10_o<31>1)
+     LUT5:I1->O            7   0.124   0.816  diff_temp[31]_GND_1_o_equal_13_o<31>1111 (diff_temp[31]_GND_1_o_equal_13_o<31>111)
+     LUT5:I1->O            5   0.124   0.448  diff_temp[31]_GND_1_o_equal_13_o<31>11 (diff_temp[31]_GND_1_o_equal_13_o<31>1)
+     LUT6:I5->O            4   0.124   0.939  diff_temp[31]_GND_1_o_equal_17_o<31>1 (diff_temp[31]_GND_1_o_equal_17_o)
+     LUT5:I0->O            1   0.124   0.776  Mmux_PWR_1_o_GND_1_o_MUX_993_o18 (Mmux_PWR_1_o_GND_1_o_MUX_993_o17)
+     LUT6:I2->O            1   0.124   0.421  Mmux_PWR_1_o_GND_1_o_MUX_993_o112 (Mmux_PWR_1_o_GND_1_o_MUX_993_o111)
+     LUT6:I5->O            1   0.124   0.421  Mmux_PWR_1_o_GND_1_o_MUX_993_o114_SW0 (N10)
+     LUT6:I5->O            2   0.124   0.427  Mmux_PWR_1_o_GND_1_o_MUX_993_o114 (PWR_1_o_GND_1_o_MUX_993_o)
+     LUT2:I1->O            2   0.124   0.722  diff_temp[31]_PWR_1_o_AND_62_o1 (diff_temp[31]_PWR_1_o_AND_62_o)
+     LUT3:I0->O            1   0.124   0.000  res_diff_1_D (res_diff_1_D)
+     LD:D                      0.011          res_diff_1
+    ----------------------------------------
+    Total                      9.461ns (1.500ns logic, 7.961ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'res_diff_0_G'
+  Total number of paths / destination ports: 3904 / 1
+-------------------------------------------------------------------------
+Offset:              10.086ns (Levels of Logic = 13)
+  Source:            diff_temp<14> (PAD)
+  Destination:       res_diff_0 (LATCH)
+  Destination Clock: res_diff_0_G falling
+
+  Data Path: diff_temp<14> to res_diff_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.001   0.809  diff_temp_14_IBUF (diff_temp_14_IBUF)
+     LUT4:I0->O            2   0.124   0.782  diff_temp[31]_GND_1_o_equal_29_o<31>121 (diff_temp[31]_GND_1_o_equal_29_o<31>12)
+     LUT5:I1->O            7   0.124   0.959  diff_temp[31]_GND_1_o_equal_29_o<31>131 (diff_temp[31]_GND_1_o_equal_29_o<31>13)
+     LUT5:I0->O            6   0.124   0.569  diff_temp[31]_GND_1_o_equal_29_o<31>11 (diff_temp[31]_GND_1_o_equal_29_o<31>1)
+     LUT4:I2->O            3   0.124   0.435  diff_temp[31]_GND_1_o_equal_26_o<31>11 (diff_temp[31]_GND_1_o_equal_26_o<31>1)
+     LUT4:I3->O            4   0.124   0.959  diff_temp[31]_GND_1_o_equal_27_o<31>1 (diff_temp[31]_GND_1_o_equal_27_o)
+     LUT6:I0->O            1   0.124   0.716  Mmux_PWR_1_o_GND_1_o_MUX_1024_o14 (Mmux_PWR_1_o_GND_1_o_MUX_1024_o13)
+     LUT6:I3->O            1   0.124   0.716  Mmux_PWR_1_o_GND_1_o_MUX_1024_o15 (Mmux_PWR_1_o_GND_1_o_MUX_1024_o14)
+     LUT6:I3->O            1   0.124   0.716  Mmux_PWR_1_o_GND_1_o_MUX_1024_o16 (Mmux_PWR_1_o_GND_1_o_MUX_1024_o15)
+     LUT6:I3->O            1   0.124   0.776  Mmux_PWR_1_o_GND_1_o_MUX_1024_o17 (Mmux_PWR_1_o_GND_1_o_MUX_1024_o16)
+     LUT6:I2->O            2   0.124   0.427  Mmux_PWR_1_o_GND_1_o_MUX_1024_o18 (PWR_1_o_GND_1_o_MUX_1024_o)
+     LUT2:I1->O            2   0.124   0.722  diff_temp[31]_PWR_1_o_AND_64_o1 (diff_temp[31]_PWR_1_o_AND_64_o)
+     LUT3:I0->O            1   0.124   0.000  res_diff_0_D (res_diff_0_D)
+     LD:D                      0.011          res_diff_0
+    ----------------------------------------
+    Total                     10.086ns (1.500ns logic, 8.586ns route)
+                                       (14.9% logic, 85.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'res_diff_4_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            res_diff_4 (LATCH)
+  Destination:       res_diff<4> (PAD)
+  Source Clock:      res_diff_4_G falling
+
+  Data Path: res_diff_4 to res_diff<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.625   0.399  res_diff_4 (res_diff_4)
+     OBUF:I->O                 0.000          res_diff_4_OBUF (res_diff<4>)
+    ----------------------------------------
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'res_diff_3_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            res_diff_3 (LATCH)
+  Destination:       res_diff<3> (PAD)
+  Source Clock:      res_diff_3_G falling
+
+  Data Path: res_diff_3 to res_diff<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.625   0.399  res_diff_3 (res_diff_3)
+     OBUF:I->O                 0.000          res_diff_3_OBUF (res_diff<3>)
+    ----------------------------------------
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'res_diff_2_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            res_diff_2 (LATCH)
+  Destination:       res_diff<2> (PAD)
+  Source Clock:      res_diff_2_G falling
+
+  Data Path: res_diff_2 to res_diff<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.625   0.399  res_diff_2 (res_diff_2)
+     OBUF:I->O                 0.000          res_diff_2_OBUF (res_diff<2>)
+    ----------------------------------------
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'res_diff_1_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            res_diff_1 (LATCH)
+  Destination:       res_diff<1> (PAD)
+  Source Clock:      res_diff_1_G falling
+
+  Data Path: res_diff_1 to res_diff<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.625   0.399  res_diff_1 (res_diff_1)
+     OBUF:I->O                 0.000          res_diff_1_OBUF (res_diff<1>)
+    ----------------------------------------
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'res_diff_0_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            res_diff_0 (LATCH)
+  Destination:       res_diff<0> (PAD)
+  Source Clock:      res_diff_0_G falling
+
+  Data Path: res_diff_0 to res_diff<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.625   0.399  res_diff_0 (res_diff_0)
+     OBUF:I->O                 0.000          res_diff_0_OBUF (res_diff<0>)
+    ----------------------------------------
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.11 secs
+ 
+--> 
+
+
+Total memory usage is 481128 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

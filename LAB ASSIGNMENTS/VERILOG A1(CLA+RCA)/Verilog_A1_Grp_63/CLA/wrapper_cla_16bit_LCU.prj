@@ -1,0 +1,4 @@
+verilog work "lookahead_carry_unit.v"
+verilog work "cla_4bit_augment.v"
+verilog work "cla_16bit_LCU.v"
+verilog work "wrapper_cla_16bit_LCU.v"

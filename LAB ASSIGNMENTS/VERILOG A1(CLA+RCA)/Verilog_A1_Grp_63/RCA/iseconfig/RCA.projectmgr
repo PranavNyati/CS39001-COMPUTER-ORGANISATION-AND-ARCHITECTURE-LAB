@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="RCA" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/rca_16bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_16bit.v/rca_8bit_1 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_16bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_16bit.v/rca_8bit_2 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_32bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_32bit.v</ClosedNode>
+         <ClosedNode>/rca_32bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_32bit.v/rca_16bit_1 - rca_16bit</ClosedNode>
+         <ClosedNode>/rca_32bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_32bit.v/rca_16bit_2 - rca_16bit</ClosedNode>
+         <ClosedNode>/rca_64bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit.v/rca_32bit_1 - rca_32bit/rca_16bit_1 - rca_16bit/rca_8bit_1 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_64bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit.v/rca_32bit_1 - rca_32bit/rca_16bit_1 - rca_16bit/rca_8bit_2 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_64bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit.v/rca_32bit_1 - rca_32bit/rca_16bit_2 - rca_16bit</ClosedNode>
+         <ClosedNode>/rca_64bit |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit.v/rca_32bit_2 - rca_32bit</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>rca_4bit (/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>rca_4bit (/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>rca_16bit.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000039f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000005f0000000100000000000000470000000100000000000000a40000000100000000000002550000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>rca_16bit.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000183000000010001000100000000000000000000000064ffffffff000000810000000000000001000001830000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000199000000010000000100000000000000000000000064ffffffff000000810000000000000001000001990000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001a90000009801000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/full_adder_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|full_adder_tb.v</ClosedNode>
+         <ClosedNode>/half_adder_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|half_adder_tb.v</ClosedNode>
+         <ClosedNode>/negative_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|negative_tb.v</ClosedNode>
+         <ClosedNode>/rca_16bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_16bit_tb.v</ClosedNode>
+         <ClosedNode>/rca_16bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_16bit_tb.v/rca_16_bit - rca_16bit/rca_8bit_1 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_16bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_16bit_tb.v/rca_16_bit - rca_16bit/rca_8bit_2 - rca_8bit</ClosedNode>
+         <ClosedNode>/rca_32bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_32bit_tb.v</ClosedNode>
+         <ClosedNode>/rca_64bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit_tb.v</ClosedNode>
+         <ClosedNode>/rca_64bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit_tb.v/rca_64_bit - rca_64bit/rca_32bit_1 - rca_32bit</ClosedNode>
+         <ClosedNode>/rca_64bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_64bit_tb.v/rca_64_bit - rca_64bit/rca_32bit_2 - rca_32bit</ClosedNode>
+         <ClosedNode>/rca_8bit_tb |home|shreyas|Xilinx|14.7|ISE_DS|xilinx_progs|RCA|rca_8bit_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000188000000020000000000000000000000000200000064ffffffff000000810000000300000002000001880000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

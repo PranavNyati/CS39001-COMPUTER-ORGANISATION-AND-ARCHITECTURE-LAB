@@ -1,0 +1,2 @@
+verilog work "cla_adder_4bit.v"
+verilog work "cla_16bit_ripple.v"

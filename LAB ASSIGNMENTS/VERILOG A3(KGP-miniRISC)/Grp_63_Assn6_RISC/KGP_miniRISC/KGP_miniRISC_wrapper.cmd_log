@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/KGP_miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 KGP_miniRISC_wrapper.ngc KGP_miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ngd KGP_miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off KGP_miniRISC_wrapper_map.ncd KGP_miniRISC_wrapper.ncd KGP_miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_miniRISC_wrapper.twx KGP_miniRISC_wrapper.ncd -o KGP_miniRISC_wrapper.twr KGP_miniRISC_wrapper.pcf 
+bitgen -intstyle ise -f KGP_miniRISC_wrapper.ut KGP_miniRISC_wrapper.ncd 

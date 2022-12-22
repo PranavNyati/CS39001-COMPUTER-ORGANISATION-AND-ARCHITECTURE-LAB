@@ -1,0 +1,20 @@
+ISim log file
+Running: /home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+IN1 =  0, IN2 =  0, CIN = 0, sum =  0, carry = 0
+IN1 =  5, IN2 =  6, CIN = 0, sum = 11, carry = 0
+IN1 = 12, IN2 = 14, CIN = 0, sum = 10, carry = 1
+IN1 = 13, IN2 =  2, CIN = 1, sum =  0, carry = 1
+IN1 = 15, IN2 = 15, CIN = 1, sum = 15, carry = 1
+Stopped at time : 10 ns : File "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit_tb.v" Line 63
+# exit 0

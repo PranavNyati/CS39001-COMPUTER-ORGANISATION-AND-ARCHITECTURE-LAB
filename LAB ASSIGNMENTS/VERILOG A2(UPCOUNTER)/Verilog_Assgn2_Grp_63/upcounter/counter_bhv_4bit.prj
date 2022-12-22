@@ -1,0 +1,2 @@
+verilog work "clock_divider.v"
+verilog work "counter_bhv_4bit.v"

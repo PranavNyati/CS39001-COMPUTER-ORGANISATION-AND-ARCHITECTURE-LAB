@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/full_adder.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/full_adder.syr" 
+xst -intstyle ise -ifn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/full_adder.xst" -ofn "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/full_adder.syr" 

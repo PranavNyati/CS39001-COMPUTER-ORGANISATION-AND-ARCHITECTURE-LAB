@@ -1,0 +1,4 @@
+verilog work "full_adder.v"
+verilog work "rca_4bit.v"
+verilog work "rca_4bit_tb.v"
+verilog work "/home/shreyas/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

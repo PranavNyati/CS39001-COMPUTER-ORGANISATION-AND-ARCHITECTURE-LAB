@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/CLA/cla_4bit_augment.syr" 

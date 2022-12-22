@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.xst" -ofn "/home/nyati_pranav26/Pranav/SEM 5/COA_LAB/A5/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/datapath.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/datapath.xst" -ofn "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/datapath.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/datapath.syr" 
+xst -intstyle ise -ifn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/datapath.xst" -ofn "D:/Grp_63_Assn6_RISC/KGP_miniRISC/datapath.syr" 

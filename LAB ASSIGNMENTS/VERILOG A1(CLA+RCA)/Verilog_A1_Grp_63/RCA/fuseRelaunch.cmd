@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit_tb_isim_beh.exe" -prj "/home/shreyas/Xilinx/14.7/ISE_DS/xilinx_progs/RCA/rca_4bit_tb_beh.prj" "work.rca_4bit_tb" "work.glbl" 

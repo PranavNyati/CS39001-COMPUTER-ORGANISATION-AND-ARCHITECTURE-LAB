@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_isim_beh.exe" -prj "D:/ISE Project/KGPminiRISC/KGP_miniRISC/KGP_miniRISC/KGP_miniRISC_wrapper_tb_beh.prj" "work.KGP_miniRISC_wrapper_tb" "work.glbl" 
